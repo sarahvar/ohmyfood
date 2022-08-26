@@ -58,3 +58,27 @@ main .ville i {
     transform: scale(1.02); 
     box-shadow: 2px 0px 16px -3px #000000;
 }
+
+.tuto ol{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+@media (min-width:320px) and (max-width:768px){
+    .tuto ol{
+    flex-direction: column;
+    }
+}
+
+
+.tuto li{
+    background-color: #f6f6f6;
+    padding: 1rem 2rem;
+    border: 1px solid red;
+    flex-grow: 1;
+    border-radius: 1rem ;
+    box-shadow: 2px 0px 8px -3px #000000;
+}
+.tuto li:hover{
+    transform: scale(1.02); 
+}
