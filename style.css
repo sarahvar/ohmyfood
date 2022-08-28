@@ -59,26 +59,80 @@ main .ville i {
     box-shadow: 2px 0px 16px -3px #000000;
 }
 
+.tuto h2{
+    padding: 2rem;
+}
 .tuto ol{
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
 }
-@media (min-width:320px) and (max-width:768px){
+@media (min-width:320px) and (max-width:767px){
     .tuto ol{
     flex-direction: column;
     }
 }
+@media (min-width:768px) and (max-width:992px){
+    .tuto ol{
+        flex-direction: column;
+    }
+}
 
-
+.tuto{
+    counter-reset: steps;
+}
 .tuto li{
+    position: relative;
+    list-style-type: none;
     background-color: #f6f6f6;
-    padding: 1rem 2rem;
-    border: 1px solid red;
+    padding: 1.5rem 2rem;
     flex-grow: 1;
     border-radius: 1rem ;
     box-shadow: 2px 0px 8px -3px #000000;
 }
+.tuto li::before{
+    content: counter(steps);
+    counter-increment: steps;
+    color: white;
+    background-color: rgb(147, 86, 220, 0.9);
+    width: 1.5rem;
+    height:1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -10px;
+    position: absolute;
+}
+
 .tuto li:hover{
     transform: scale(1.02); 
+}
+.tuto li i{
+    margin-right: 1rem;
+    color: #7e7e7e;
+    font-size: 1.5rem;
+}
+
+.tuto .fa-store{
+    color: rgb(147, 86, 220, 0.9);
+}
+
+.restaurants{
+    background-color: #f6f6f6;
+}
+.restaurants h2{
+    padding: 3rem 0rem 0rem 2rem;
+}
+.restaurants .carte{
+    border: 1px solid black;
+    height: 4rem; 
+    flex-grow: 1;
+    min-width: 30rem;
+}
+.restaurants .restaurants_carte{
+    flex-wrap: wrap;
+    display:flex;
+    gap:2rem;
+    padding: 0rem 2rem 2rem 2rem;
 }
