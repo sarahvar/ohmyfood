@@ -118,21 +118,46 @@ main .ville i {
     color: rgb(147, 86, 220, 0.9);
 }
 
-.restaurants{
+.menus{
     background-color: #f6f6f6;
 }
-.restaurants h2{
+.menus h2{
     padding: 3rem 0rem 0rem 2rem;
 }
-.restaurants .carte{
-    border: 1px solid black;
+.menus .card{
     height: 4rem; 
     flex-grow: 1;
     min-width: 30rem;
 }
-.restaurants .restaurants_carte{
-    flex-wrap: wrap;
-    display:flex;
-    gap:2rem;
-    padding: 0rem 2rem 2rem 2rem;
+.menus_cards{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr );
+    grid-gap: 3rem;
+    padding: 2rem;
+}
+@media (min-width:320px) and (max-width:768px){
+    .menus_cards{
+        grid-template-columns: repeat(1, 1fr);
+}
+}
+
+.card_image1{
+    background-image: url("../../Bureau/ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    height: 15rem;
+    background-size: cover;
+}
+.card_image2{
+    background-image: url("../../Bureau/ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    height: 15rem;
+    background-size: cover;
+}
+.card_image3{
+    background-image: url("../../Bureau/ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    height: 15rem;
+    background-size: cover;
+}
+.card_image4{
+    background-image: url("../../Bureau/ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    height: 15rem;
+    background-size: cover;
 }
