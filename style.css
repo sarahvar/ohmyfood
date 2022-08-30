@@ -142,7 +142,7 @@ main .ville i {
 }
 
 .card_image1{
-    background-image: url("../../Bureau/ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     height: 15rem;
     background-size: cover;
 }
@@ -152,12 +152,12 @@ main .ville i {
     background-size: cover;
 }
 .card_image3{
-    background-image: url("../../Bureau/ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     height: 15rem;
     background-size: cover;
 }
 .card_image4{
-    background-image: url("../../Bureau/ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     height: 15rem;
     background-size: cover;
 }
