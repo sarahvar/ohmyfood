@@ -107,22 +107,82 @@ main .ville i {
     left: -10px;
     position: absolute;
 }
-
-.tuto li:hover{
-    transform: scale(1.02); 
+.function {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 16px 50px 16px;
+  }
+  
+  .steps {
+    display: flex;
+    flex-direction: column;
+  }
+  .steps--article {
+    margin: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    border-radius: 20px;
+    background: #F8F8F8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .steps--article:hover {
+    background: #f7f5fb;
+    cursor: pointer;
+  }
+  .steps--article:hover .darkgray {
+    color: #9356DC;
+  }
+  .steps--article--name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .steps--number {
+    background: #9356DC;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    font-size: 14px;
+    margin-left: -11px;
+    color: white;
 }
-.tuto li i{
-    margin-right: 1rem;
-    color: #7e7e7e;
-    font-size: 1.5rem;
+@media (min-width: 768px) and (max-width:1920px){
+    .steps {
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+    .steps--article {
+    width: 33%;
+    gap: 10px;
+    }
+    .steps--article--name {
+    font-size: 14px;
+    }
+    .steps--number {
+    padding-top: 3px;
+    }
+}
+.white {
+    color: white;
 }
 
-.tuto .fa-store{
-    color: rgb(147, 86, 220, 0.9);
+.darkgray {
+    color: #808080;
+}
+
+.size {
+    font-size: 18px;
 }
 
 .restaurants{
-    background-color: #f6f6f6;
+    background-color: #f2f2f2;
 }
 .restaurants h2{
     padding: 3rem 0rem 0rem 2rem;
@@ -179,20 +239,41 @@ main .ville i {
     top:1rem;
     border-radius: 0.2rem;
 }
-h3, p{
-margin:0;
-padding: 0rem 0rem 0rem 1rem;
+.card_description h3{
+padding: 1rem 0rem 0rem 1rem;
 }
+p{
+    padding: 0rem 1rem 1rem 1rem;
+    } 
+p i {
+        padding:0.2rem;
+    }
 .restaurants .card_description{
-    margin-top: 1rem;
+    position: relative;
+    margin-top: -1rem;
+    background-color: white;
+    border-radius: 0rem 0rem 1rem 1rem;
 }
-.restaurants .card_description i::before{
-    position:relative;
+.restaurants .card_description i{
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transform: translateY(-5.5rem);
+}
+.restaurants .card_description i.fa-solid{
+    color:transparent;
+    background-image: linear-gradient(to top, rgb(255, 121, 218 , 0.9),rgb(147, 86, 220, 0.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+footer{
+    background-color: #353535;
+    padding: 1rem 2rem;
+    color: white;
 }
 
-.restaurants .card_description i {
-    position: absolute;
-    font-size: 2rem;
-    right: 1rem;
-    transform: translateY(-2rem);
+footer h2{
+    font-family: 'Shrikhand', "sans-sherif";
+    font-weight: 500;
+    padding:0.2rem 0rem 0rem 1rem;
 }
