@@ -334,27 +334,51 @@ main .ville i {
 
 .card_image-1{
     background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    height: 15rem;
+    width:100%;
+    height: 300px;
     border-radius: 1rem 1rem 0rem 0rem;
     background-size: cover;
 }
 .card_image-2{
     background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-    height: 15rem;
+    width:100%;
+    height: 300px;
     border-radius: 1rem 1rem 0rem 0rem;
     background-size: cover;
 }
 .card_image-3{
     background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    height: 15rem;
+    width:100%;
+    height: 300px;
     border-radius: 1rem 1rem 0rem 0rem;
     background-size: cover;
 }
 .card_image-4{
     background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-    height: 15rem;
+    width:100%;
+    height: 300px;
     border-radius: 1rem 1rem 0rem 0rem;
     background-size: cover;
+}
+@media (min-width:320px) and (max-width:767px){
+    .card_image-1{
+    height:15rem;
+    }
+}
+@media (min-width:320px) and (max-width:767px){
+    .card_image-2{
+    height:15rem;
+    }
+}
+@media (min-width:320px) and (max-width:767px){
+    .card_image-3{
+    height:15rem;
+    }
+}
+@media(min-width:320px) and (max-width:767px){
+    .card_image-4{
+    height:15rem;
+    }
 }
 .restaurants .card_new{
     position: relative;
