@@ -242,7 +242,9 @@ main .ville i {
     flex-direction: column;
     padding: 30px 16px 50px 16px;
 }
-
+.function .function--name{
+    padding:1rem;
+}
 .steps {
     display: flex;
     flex-direction: column;
@@ -362,17 +364,17 @@ main .ville i {
 }
 @media (min-width:320px) and (max-width:767px){
     .card_image-1{
-    height:15rem;
+    height:200px;
     }
 }
 @media (min-width:320px) and (max-width:767px){
     .card_image-2{
-    height:15rem;
+    height:10rem;
     }
 }
 @media (min-width:320px) and (max-width:767px){
     .card_image-3{
-    height:15rem;
+    height:10rem;
     }
 }
 @media(min-width:320px) and (max-width:767px){
