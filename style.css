@@ -362,24 +362,24 @@ main .ville i {
     border-radius: 1rem 1rem 0rem 0rem;
     background-size: cover;
 }
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:560px){
     .card_image-1{
     height:200px;
     }
 }
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:560px){
     .card_image-2{
     height:10rem;
     }
 }
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:560px){
     .card_image-3{
     height:10rem;
     }
 }
-@media(min-width:320px) and (max-width:767px){
+@media(min-width:320px) and (max-width:560px){
     .card_image-4{
-    height:15rem;
+    height:10rem;
     }
 }
 .restaurants .card_new{
