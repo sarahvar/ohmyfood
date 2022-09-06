@@ -31,7 +31,6 @@ body{
 .loading .balls {
     display: flex;
     flex-direction: row;
-    border: 4px solid #9356DC;
     background-color: white;
     height: 250px;
     width: 250px;
