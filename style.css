@@ -241,6 +241,7 @@ main .ville i {
     display: flex;
     flex-direction: column;
     padding: 30px 16px 50px 16px;
+    justify-content: center;
 }
 .function .function--name{
     padding:1rem;
@@ -248,6 +249,7 @@ main .ville i {
 .steps {
     display: flex;
     flex-direction: column;
+    align-items:center;
 }
 .steps--article {
     margin: 12px;
@@ -255,11 +257,12 @@ main .ville i {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 24px;
     border-radius: 20px;
     background: #F8F8F8;
     padding-top: 5px;
     padding-bottom: 5px;
+    box-shadow: 4px 4px 6px #cbcbcb;
+    width:50%;
 }
 .steps--article:hover {
     background-color: #F5EDFF;
@@ -273,6 +276,7 @@ main .ville i {
 .steps--article--name {
     font-size: 18px;
     font-weight: 500;
+    padding-left: 40px;
 }
 .steps--number {
     background: #9356DC;
@@ -287,7 +291,7 @@ main .ville i {
     margin-left: -11px;
     color: white;
 }
-@media (min-width: 768px) and (max-width:1920px){
+@media (min-width: 920px) and (max-width:1920px){
     .steps {
     flex-direction: row;
     justify-content: space-evenly;
@@ -297,11 +301,27 @@ main .ville i {
     gap: 10px;
     }
     .steps--article--name {
+
     font-size: 14px;
     }
     .steps--number {
     padding-top: 3px;
     }
+}
+@media (min-width:320px) and (max-width:450px){
+.steps--article {
+    margin: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    background: #F8F8F8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 4px 4px 6px #cbcbcb;
+    width:100%;
+}
 }
 .white {
     color: white;
@@ -309,12 +329,13 @@ main .ville i {
 
 .darkgray {
     color: #808080;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .size {
     font-size: 18px;
 }
-
 .restaurants{
     background-color: #f2f2f2;
     padding: 0rem 0rem 5rem 0rem;
@@ -328,7 +349,7 @@ main .ville i {
     grid-gap: 3rem;
     padding: 0rem 2rem 0rem 2rem;
 }
-@media (min-width:320px) and (max-width:768px){
+@media (min-width:320px) and (max-width:920px){
     .menus_cards{
         grid-template-columns: repeat(1, 1fr);
 }
