@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+header {
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    padding: 0.2rem;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+}
+main h2{
+    font-family:"Shrikhand", "sans-serif" ;
+    margin-left: 1rem;
+    padding-top: 2rem;
+}
+.heart--absolute {
+    position: absolute;
+    margin-top: -2rem;
+    right: 50px;
+    font-size: 24px;
+    font-weight: 100;
+}
+.heart--absolute:hover {
+    animation: heart 800ms ease forwards;
+    cursor: pointer;
+}
+@keyframes heart {
+    0% {
+    font-weight: 800;
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.1;
+    }
+    100% {
+    font-weight: 800;
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+main .menucontainer {
+    background-color: #e3e3e3;
+    padding-bottom: 3%;
+    margin-top: -4rem;
+    position: relative;
+    border-radius: 2rem 2rem 0px 0px;
+  }
+.menus-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+}
+@media (max-width:1026px){
+    .menus-grid{
+        grid-template-columns: 1fr;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+}
+.menus_category{
+     border:1px solid red;
+     background-color: #ffffff;
+     border-radius: 1.5rem;
+}
+.resto-main{
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: #e3e3e3;
+}
+
+footer{
+    background-color: #353535;
+    padding: 1rem 2rem;
+    color: white;
+}
+footer h2{
+    font-family: "Shrikhand";
+    padding:1rem
+}
+footer p{
+    padding:2px;
+}
+@media (min-width: 768px) {
+    footer {
+    text-align: center;
+    }
+}
