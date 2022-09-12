@@ -80,6 +80,7 @@ main .menucontainer {
     background-color: #ffffff;
     border-radius: 1.5rem;
     box-shadow: 7px 7px 8px #cbcbcb;
+    overflow: hidden;
     cursor:pointer
 }
 .menus_category h4{
@@ -94,7 +95,6 @@ main .menucontainer {
     display:flex;
     align-items: center;
     padding:0.5rem 0rem 0rem 0rem;
-    overflow: hidden;
 }
 
 .menu-item_description p{
@@ -122,11 +122,10 @@ main .menucontainer {
     margin-right: -5.5rem;
     width:5.5rem;
     cursor:pointer;
+    transition:margin-right 500ms;
 }
 .menu-item_check:hover{
     margin-right: 0rem;
-    transition:margin-right 0.5s;
-
 }
 .menu-item_check .fa-solid{
     font-size:1.8rem;
