@@ -83,6 +83,11 @@ main .menucontainer {
     overflow: hidden;
     cursor:pointer
 }
+.menus-grid h3{
+    height: 50px;
+    border-bottom: 3px solid #99E2D0;
+    width: 35px;
+}
 .menus_category h4{
     padding: 0 0.5rem;
     margin: 0;
