@@ -120,15 +120,20 @@ main .menucontainer {
     padding: 2rem;
     margin-top:-0.6rem;
     margin-right: -5.5rem;
-    width:5.5rem;
+    width:5.6rem;
     cursor:pointer;
     transition:margin-right 500ms;
 }
-.menu-item_check:hover{
+.menu-item:hover > .menu-item_check{
     margin-right: 0rem;
 }
 .menu-item_check .fa-solid{
     font-size:1.8rem;
+}
+.menu-item:hover > .menu-item_check .fa-solid{
+    transform: rotate(360deg);   
+    transition: transform 1000ms;
+    transform-origin: 80% 80%; 
 }
 footer{
     background-color: #353535;
