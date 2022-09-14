@@ -170,7 +170,7 @@ main .menucontainer {
 .menus-grid{
     display:flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .menus_category{
@@ -190,8 +190,8 @@ main .menucontainer {
 @media (min-width:1026px){
     .menus-grid{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 0rem 0rem 4rem 0rem;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 0rem 0rem 1rem 0rem;
     }
 }
 @media (max-width: 1025px){
