@@ -75,7 +75,6 @@ body{
 .ldio-xous80q7cfk > div:nth-child(1) div:nth-child(3) { animation-delay: 0s }
 .loadingio-spinner-bean-eater-fy1cldhrzxn {
     overflow: hidden;
-    background: hidden;
 }
 .ldio-xous80q7cfk {
     background-color: #ffffff;
@@ -137,7 +136,7 @@ main h2{
 }
 .heart--absolute {
     position: absolute;
-    margin-top: -2rem;
+    margin-top: -3rem;
     right: 50px;
     font-size: 24px;
     font-weight: 100;
