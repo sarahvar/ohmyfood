@@ -169,13 +169,13 @@ main .menucontainer {
     transition: transform 1000ms;
 }
 .resto .menus_category .menu-carte1 {
-    animation: menu-appear 1s ease-in-out 400ms both;
+    animation: menu-appear 1s ease-in-out 500ms both;
 }
 .resto .menus_category .menu-carte2 {
-    animation: menu-appear 1s ease-in-out 600ms both;
+    animation: menu-appear 2s ease-in-out 700ms both;
 }
 .resto .menus_category .menu-carte3 {
-    animation: menu-appear 1s ease-in-out 800ms both;
+    animation: menu-appear 3s ease-in-out 900ms both;
 }
 
 @keyframes menu-appear {
