@@ -81,7 +81,7 @@ main .menucontainer {
     gap: 3rem;
 }
 
-.menus_category{
+.menus_category .menu-item{
     background-color: #ffffff;
     border-radius: 1.5rem;
     box-shadow: 7px 7px 8px #cbcbcb;
@@ -168,14 +168,22 @@ main .menucontainer {
     transform: rotate(360deg);   
     transition: transform 1000ms;
 }
-@keyframes appear{
-    0%{
-        transform: translateY(-50%);
-        opacity: 0;
+.resto .menus_category .menu-carte1 {
+    animation: menu-appear 1s ease-in-out 400ms both;
+}
+.resto .menus_category .menu-carte2 {
+    animation: menu-appear 1s ease-in-out 600ms both;
+}
+.resto .menus_category .menu-carte3 {
+    animation: menu-appear 1s ease-in-out 800ms both;
+}
+
+@keyframes menu-appear {
+    0% {
+    transform: scale(0);
     }
-    100%{
-        transform:translateY(0);
-        opacity: 1;
+    100% {
+    transform: scale(1);
     }
 }
 .commander button{
