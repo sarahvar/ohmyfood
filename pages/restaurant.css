@@ -38,6 +38,7 @@ img {
     object-fit: cover;
 }
 main h2{
+    font-size:25px;
     font-family:"Shrikhand", "sans-serif" ;
     margin-left: 1rem;
     padding-top: 2rem;
