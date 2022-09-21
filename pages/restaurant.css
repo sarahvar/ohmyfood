@@ -169,21 +169,23 @@ main .menucontainer {
     transition: transform 1000ms;
 }
 .resto .menus_category .menu-carte1 {
-    animation: menu-appear 1s ease-in-out 500ms both;
+    animation: menu-appear 1s ease-in-out 400ms both;
 }
 .resto .menus_category .menu-carte2 {
-    animation: menu-appear 2s ease-in-out 700ms both;
+    animation: menu-appear 1s ease-in-out 700ms both;
 }
 .resto .menus_category .menu-carte3 {
-    animation: menu-appear 3s ease-in-out 900ms both;
+    animation: menu-appear 1s ease-in-out 1100ms both;
 }
 
 @keyframes menu-appear {
-    0% {
-    transform: scale(0);
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
     }
-    100% {
-    transform: scale(1);
+    100%{
+        transform:translateY(0);
+        opacity: 1;
     }
 }
 .commander button{

@@ -78,7 +78,7 @@ main .menucontainer {
 .menus-grid{
     display:flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .menus_category .menu-item{
@@ -172,20 +172,22 @@ main .menucontainer {
     animation: menu-appear 1s ease-in-out 400ms both;
 }
 .resto .menus_category .menu-carte2 {
-    animation: menu-appear 1s ease-in-out 600ms both;
+    animation: menu-appear 1s ease-in-out 700ms both;
 }
 .resto .menus_category .menu-carte3 {
-    animation: menu-appear 1s ease-in-out 800ms both;
+    animation: menu-appear 1s ease-in-out 1100ms both;
 }
 .resto .menus_category .menu-carte4 {
-    animation: menu-appear 1s ease-in-out 1000ms both;
+    animation: menu-appear 1s ease-in-out 1300ms both;
 }
 @keyframes menu-appear {
-    0% {
-    transform: scale(0);
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
     }
-    100% {
-    transform: scale(1);
+    100%{
+        transform:translateY(0);
+        opacity: 1;
     }
 }
 .commander button{
