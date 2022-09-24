@@ -11,7 +11,7 @@ body{
     margin: 0px;
     font-family: "Roboto", sans-serif;
 }
-
+/*Animation chargement de la page  */
 .loading {
     position: fixed;
     background-color: #ffffff;
@@ -105,7 +105,7 @@ body{
     visibility: hidden;
     }
 }
-
+/* Fin du chargement de la page */
 
 header {
     font-family: 'Shrikhand', cursive;
@@ -178,6 +178,7 @@ main .ville i {
     box-shadow: 2px 0px 16px -3px #000000;
 }
 
+/* Media queries mobile */
 @media (min-width:320px) and (max-width:767px){
     .explorer h2{
         flex-direction: column;
@@ -190,6 +191,8 @@ main .ville i {
         width:100%;
     }
 }
+/* Fin media queries mobile */
+
 .function {
     display: flex;
     flex-direction: column;
@@ -244,6 +247,25 @@ main .ville i {
     margin-left: -11px;
     color: white;
 }
+/* Media queries Mobile */
+@media (min-width:320px) and (max-width:450px){
+    .etapes--article {
+        margin: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 20px;
+        background: #F8F8F8;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 4px 4px 6px #cbcbcb;
+        width:100%;
+    }
+    }
+/* Fin media queries Mobile */
+
+/* Media queries Desktop */
 @media (min-width: 920px) and (max-width:1920px){
     .etapes {
     flex-direction: row;
@@ -261,21 +283,8 @@ main .ville i {
     padding-top: 3px;
     }
 }
-@media (min-width:320px) and (max-width:450px){
-.etapes--article {
-    margin: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 20px;
-    background: #F8F8F8;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    box-shadow: 4px 4px 6px #cbcbcb;
-    width:100%;
-}
-}
+/* Fin media queries Desktop */
+
 .white {
     color: white;
 }
@@ -302,11 +311,13 @@ main .ville i {
     grid-gap: 3rem;
     padding: 0rem 2rem 0rem 2rem;
 }
+/* Media queries mobile et tablette des cartes */
 @media (min-width:320px) and (max-width:920px){
     .menus_cards{
         grid-template-columns: repeat(1, 1fr);
 }
 }
+/* Fin media queries mobile et tablette des cartes */
 
 .card_image-1{
     background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -336,9 +347,12 @@ main .ville i {
     border-radius: 1rem 1rem 0rem 0rem;
     background-size: cover;
 }
+
+
+/* Media queries  taille images sur version mobile */
 @media (min-width:320px) and (max-width:560px){
     .card_image-1{
-    height:200px;
+    height:10rem;
     }
 }
 @media (min-width:320px) and (max-width:560px){
@@ -351,11 +365,13 @@ main .ville i {
     height:10rem;
     }
 }
-@media(min-width:320px) and (max-width:560px){
+@media (min-width:320px) and (max-width:560px){
     .card_image-4{
     height:10rem;
     }
 }
+/* Fin media quieres mobile taille images */
+
 .restaurants .card_new{
     position: relative;
 } 
@@ -393,7 +409,7 @@ p i {
     right: 1rem;
     top:1rem;
 }
-
+/* Animaton coeur */
 .heart--absolute {
     position: absolute;
     margin-left: 40rem;
@@ -420,6 +436,7 @@ p i {
     -webkit-text-fill-color: transparent;
     }
 }
+/* Fin animation coeur */
 
 footer{
     background-color: #353535;
@@ -433,6 +450,7 @@ footer h2{
 footer p{
     padding:2px;
 }
+/* Media queries footer centre tablette et desktop */
 @media (min-width: 768px) {
     footer {
     text-align: center;

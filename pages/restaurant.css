@@ -43,6 +43,7 @@ main h2{
     margin-left: 1rem;
     padding-top: 2rem;
 }
+/* Constitution du coeur */
 .heart--absolute {
     position: absolute;
     margin-top: -3rem;
@@ -69,6 +70,8 @@ main h2{
     -webkit-text-fill-color: transparent;
     }
 }
+/* Fin constitutiondu coeur */
+
 main .menucontainer {
     background-color: #e3e3e3;
     padding-bottom: 3%;
@@ -89,25 +92,28 @@ main .menucontainer {
     overflow: hidden;
     cursor:pointer;
 }
+/* Surligne les h3 Entrées Plats Desserts */
 .menus-grid h3{
     border-bottom: 3px solid #99E2D0;
     text-transform: uppercase;
     font-weight: 400;
     padding-top : 1rem;
 }
-@media (min-width:1026px){
-    .menus-grid{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 0rem 0rem 4rem 0rem;
-    }
-}
+/* Media queries tablette et mobile */
 @media (max-width: 1025px){
     .menus-grid h3{
         width:45px;
         padding-top:50px;
         margin-bottom: -0.5rem;
     
+    }
+}
+/* Media queries Desktop */
+@media (min-width:1026px){
+    .menus-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0rem 0rem 4rem 0rem;
     }
 }
 .menus_category h4{
@@ -145,6 +151,7 @@ main .menucontainer {
     font-weight:900;
     padding-right: 1.5rem;
 }
+/* Animation apparition check sur fond vert */
 .menu-item_check{
     background-color: #99E2D0;
     color:#ffffff;
@@ -164,10 +171,14 @@ main .menucontainer {
 .menu-item_check .fa-solid{
     font-size:1.8rem;
 }
+
 .menu-item:hover > .menu-item_check .fa-solid{
     transform: rotate(360deg);   
     transition: transform 1000ms;
 }
+/* Fin animation check sur fond vert */
+
+/* Apparition successive des cartes */
 .resto .menus_category .menu-carte1 {
     animation: menu-appear 1s ease-in-out 400ms both;
 }
@@ -188,6 +199,8 @@ main .menucontainer {
         opacity: 1;
     }
 }
+/* Fin animations apparitions successives cartes */
+
 .commander button{
     color:white;
     font-size: 20px;
@@ -225,6 +238,7 @@ footer h2{
 footer p{
     padding:2px;
 }
+/* Media queries Desktop */
 @media (min-width: 768px) {
     footer {
     text-align: center;
