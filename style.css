@@ -355,17 +355,17 @@ main .ville i {
     height:200px;
     }
 }
-@media (min-width:320px) and (max-width:560px){
+@media (min-width:320px) and (max-width:767px){
     .card_image-2{
     height:200px;
     }
 }
-@media (min-width:320px) and (max-width:560px){
+@media (min-width:320px) and (max-width:767px){
     .card_image-3{
     height:200px;
     }
 }
-@media (min-width:320px) and (max-width:560px){
+@media (min-width:320px) and (max-width:767px){
     .card_image-4{
     height:200px;
     }
