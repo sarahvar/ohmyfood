@@ -10,8 +10,9 @@
 body{
     margin: 0px;
     font-family: "Roboto", sans-serif;
-}
-/*Animation chargement de la page  */
+}                                   
+                                    /* 1 Loading Spinner */
+                                    /*Animation chargement de la page  */
 .loading {
     position: fixed;
     background-color: #ffffff;
@@ -23,7 +24,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    animation: disappear 5s;  /* L'animation dur 3 secondes */ 
+    animation: disappear 3s;  /* L'animation dur 3 secondes */ 
     animation-fill-mode: forwards;
 }
 .loading .balles {
@@ -105,8 +106,10 @@ body{
     visibility: hidden;
     }
 }
-/* Fin du chargement de la page */
+                                    /* Fin du chargement de la page */
+                                    /*-- 1 Fin Loading Spinner */
 
+                                    /* 2 Header : Nom du site */
 header {
     font-family: 'Shrikhand', cursive;
     text-align: center;
@@ -118,6 +121,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+                                    /* 2 Fin Header : Nom du site */
+
+                                    /* 3 Main : Ville  */
 main .ville {
     display: flex;
     align-items: center;
@@ -131,6 +138,10 @@ main .ville {
 main .ville i {
     font-size: 1.5rem;
 }
+                                    /* 3 Fin Main : Ville */
+
+                                    /* 4 Explorer  */
+
 
 .explorer{
     text-align: center;
@@ -177,8 +188,9 @@ main .ville i {
     transform: scale(1.02); 
     box-shadow: 2px 0px 16px -3px #000000;
 }
+                                    /* 4 Fin Explorer  */
 
-/* Media queries mobile */
+                                    /* Media queries Explorer mobile */
 @media (min-width:320px) and (max-width:767px){
     .explorer h2{
         flex-direction: column;
@@ -191,7 +203,9 @@ main .ville i {
         width:100%;
     }
 }
-/* Fin media queries mobile */
+                                    /* Fin Media queries Explorer mobile */
+
+                                    /* 5 Fonctionnement */
 
 .function {
     display: flex;
@@ -202,6 +216,9 @@ main .ville i {
 .function .function-nom{
     padding:1rem;
 }
+                                    /* 5 Fin Fonctionnement */
+
+                                    /* 6 Etapes */
 .etapes {
     display: flex;
     flex-direction: column;
@@ -247,7 +264,20 @@ main .ville i {
     margin-left: -11px;
     color: white;
 }
-/* Media queries Mobile */
+
+.darkgray {
+    color: #808080;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.taille {
+    font-size: 18px;
+}
+                                    /* 6 Fin Etapes */
+
+                                    /* Media queries Etapes Mobile */
+
 @media (min-width:320px) and (max-width:450px){
     .etapes--article {
         margin: 12px;
@@ -263,9 +293,10 @@ main .ville i {
         width:100%;
     }
     }
-/* Fin media queries Mobile */
+                                    /* Fin media queries Etapes Mobile */
 
-/* Media queries Desktop */
+                                    /* Media queries Etapes  Desktop */
+
 @media (min-width: 920px) and (max-width:1920px){
     .etapes {
     flex-direction: row;
@@ -283,21 +314,9 @@ main .ville i {
     padding-top: 3px;
     }
 }
-/* Fin media queries Desktop */
+                                    /* Fin media queries Etapes Desktop */
 
-.white {
-    color: white;
-}
-
-.darkgray {
-    color: #808080;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.taille {
-    font-size: 18px;
-}
+                                    /* 7 Restaurants  */
 .restaurants{
     background-color: #f2f2f2;
     padding: 0rem 0rem 5rem 0rem;
@@ -311,13 +330,13 @@ main .ville i {
     grid-gap: 3rem;
     padding: 0rem 2rem 0rem 2rem;
 }
-/* Media queries mobile et tablette des cartes */
+                                    /* Media queries mobile et tablette des cartes */
 @media (min-width:320px) and (max-width:920px){
     .menus_cards{
         grid-template-columns: repeat(1, 1fr);
 }
 }
-/* Fin media queries mobile et tablette des cartes */
+                                    /* Fin media queries mobile et tablette des cartes */
 
 .card_image-1{
     background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -347,31 +366,6 @@ main .ville i {
     border-radius: 1rem 1rem 0rem 0rem;
     background-size: cover;
 }
-
-
-/* Media queries  taille images sur version mobile */
-@media (min-width:320px) and (max-width:767px){
-    .card_image-1{
-    height:200px;
-    }
-}
-@media (min-width:320px) and (max-width:767px){
-    .card_image-2{
-    height:200px;
-    }
-}
-@media (min-width:320px) and (max-width:767px){
-    .card_image-3{
-    height:200px;
-    }
-}
-@media (min-width:320px) and (max-width:767px){
-    .card_image-4{
-    height:200px;
-    }
-}
-/* Fin media quieres mobile taille images */
-
 .restaurants .card_new{
     position: relative;
 } 
@@ -409,7 +403,33 @@ p i {
     right: 1rem;
     top:1rem;
 }
-/* Animaton coeur */
+                                    /* 7 Fin Restaurants */
+
+                                    /* Media queries  taille images sur version mobile */
+@media (min-width:320px) and (max-width:767px){
+    .card_image-1{
+    height:200px;
+    }
+}
+@media (min-width:320px) and (max-width:767px){
+    .card_image-2{
+    height:200px;
+    }
+}
+@media (min-width:320px) and (max-width:767px){
+    .card_image-3{
+    height:200px;
+    }
+}
+@media (min-width:320px) and (max-width:767px){
+    .card_image-4{
+    height:200px;
+    }
+}
+                                    /* Fin media quieres mobile taille images */
+
+
+                                    /* Animaton coeur */
 .heart--absolute {
     position: absolute;
     margin-left: 40rem;
@@ -436,7 +456,9 @@ p i {
     -webkit-text-fill-color: transparent;
     }
 }
-/* Fin animation coeur */
+                                    /* Fin animation coeur */
+
+                                    /* 8 Footer */
 
 footer{
     background-color: #353535;
@@ -450,7 +472,9 @@ footer h2{
 footer p{
     padding:2px;
 }
-/* Media queries footer centre tablette et desktop */
+                                    /* 8 Fin Footer  */
+
+                                    /* Media queries footer centre tablette et desktop */
 @media (min-width: 768px) {
     footer {
     text-align: center;

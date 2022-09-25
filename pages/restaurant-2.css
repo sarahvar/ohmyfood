@@ -42,7 +42,7 @@ main h2{
     margin-left: 1rem;
     padding-top: 2rem;
 }
-/* Constitution du coeur */
+                                    /* Constitution du coeur */
 .heart--absolute {
     position: absolute;
     margin-top: -3rem;
@@ -69,7 +69,7 @@ main h2{
     -webkit-text-fill-color: transparent;
     }
 }
-/* Fin coeur */
+                                    /* Fin coeur */
 
 main .menucontainer {
     background-color: #e3e3e3;
@@ -98,7 +98,7 @@ main .menucontainer {
     font-weight: 400;
     padding-top : 1rem;
 }
-/* Media queries tablette et mobile */
+                                    /* Media queries tablette et mobile */
 @media (max-width: 1025px){
     .menus-grid h3{
         width:45px;
@@ -107,7 +107,7 @@ main .menucontainer {
     
     }
 }
-/* Media queries Desktop */
+                                    /* Media queries Desktop */
 @media (min-width:1026px){
     .menus-grid{
         display: grid;
@@ -150,7 +150,7 @@ main .menucontainer {
     font-weight:900;
     padding-right: 1.5rem;
 }
-/* Animation apparition check sur fond vert */
+                                    /* Animation apparition check sur fond vert */
 .menu-item_check{
     background-color: #99E2D0;
     color:#ffffff;
@@ -174,9 +174,9 @@ main .menucontainer {
     transform: rotate(360deg);   
     transition: transform 1000ms;
 }
-/* Fin animation check sur fond vert */
+                                    /* Fin animation check sur fond vert */
 
-/* Apparition successive des cartes */
+                                    /* Apparition successive des cartes */
 .resto .menus_category .menu-carte1 {
     animation: menu-appear 1s ease-in-out 400ms both;
 }
@@ -199,7 +199,7 @@ main .menucontainer {
         opacity: 1;
     }
 }
-/* Fin animations apparitions successives cartes */
+                                    /* Fin animations apparitions successives cartes */
 
 .commander button{
     color:white;

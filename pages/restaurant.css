@@ -11,6 +11,7 @@ body{
     margin: 0px;
     font-family: "Roboto", sans-serif;
 }
+                                    /* 1 Header */
 header .arrowindex {
     position: absolute;
     left: 3%;
@@ -32,18 +33,25 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+                                    /* 1 Fin Header */
+
+                                    /* 2 Image restaurant */
 img {
     width: 100%;
     max-height: 30rem;
     object-fit: cover;
 }
+                                    /* 2 Fin Image restaurant */
+
+                                    /* 3 Main */
 main h2{
     font-size:25px;
     font-family:"Shrikhand", "sans-serif" ;
     margin-left: 1rem;
     padding-top: 2rem;
 }
-/* Constitution du coeur */
+                                    /* Constitution du coeur */
 .heart--absolute {
     position: absolute;
     margin-top: -3rem;
@@ -70,7 +78,7 @@ main h2{
     -webkit-text-fill-color: transparent;
     }
 }
-/* Fin constitutiondu coeur */
+                                    /* Fin constitutiondu coeur */
 
 main .menucontainer {
     background-color: #e3e3e3;
@@ -79,6 +87,9 @@ main .menucontainer {
     position: relative;
     border-radius: 2rem 2rem 0px 0px;
 }
+                                     /* 3 Fin Main */
+
+                                     /* 4 Resto */
 .menus-grid{
     display:flex;
     flex-direction: column;
@@ -92,14 +103,14 @@ main .menucontainer {
     overflow: hidden;
     cursor:pointer;
 }
-/* Surligne les h3 Entrées Plats Desserts */
+                                    /* Surligne les h3 Entrées Plats Desserts */
 .menus-grid h3{
     border-bottom: 3px solid #99E2D0;
     text-transform: uppercase;
     font-weight: 400;
     padding-top : 1rem;
 }
-/* Media queries tablette et mobile */
+                                    /* Media queries tablette et mobile */
 @media (max-width: 1025px){
     .menus-grid h3{
         width:45px;
@@ -108,7 +119,7 @@ main .menucontainer {
     
     }
 }
-/* Media queries Desktop */
+                                    /* Media queries Desktop */
 @media (min-width:1026px){
     .menus-grid{
         display: grid;
@@ -151,7 +162,7 @@ main .menucontainer {
     font-weight:900;
     padding-right: 1.5rem;
 }
-/* Animation apparition check sur fond vert */
+                                    /* Animation apparition check sur fond vert */
 .menu-item_check{
     background-color: #99E2D0;
     color:#ffffff;
@@ -176,7 +187,7 @@ main .menucontainer {
     transform: rotate(360deg);   
     transition: transform 1000ms;
 }
-/* Fin animation check sur fond vert */
+                                    /* Fin animation check sur fond vert */
 
 /* Apparition successive des cartes */
 .resto .menus_category .menu-carte1 {
@@ -199,8 +210,10 @@ main .menucontainer {
         opacity: 1;
     }
 }
-/* Fin animations apparitions successives cartes */
+                                    /* Fin animations apparitions successives cartes */
+                                    /* 4 Fin Resto */
 
+                                    /* 5 Bouton commmander */
 .commander button{
     color:white;
     font-size: 20px;
@@ -226,6 +239,9 @@ main .menucontainer {
     transform: scale(1.02); 
     box-shadow: 2px 0px 16px -3px #000000;
 }
+                                    /* 5 Fin Bouton commander */
+
+                                    /* 6 Footer */
 footer{
     background-color: #353535;
     padding: 1rem 2rem;
@@ -238,9 +254,10 @@ footer h2{
 footer p{
     padding:2px;
 }
-/* Media queries Desktop */
+                                    /* Media queries Desktop */
 @media (min-width: 768px) {
     footer {
     text-align: center;
     }
 }
+                                    /* 6 Fin Footer */
