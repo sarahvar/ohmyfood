@@ -238,6 +238,7 @@ main .menucontainer {
 .commander button:hover{
     transform: scale(1.02); 
     box-shadow: 2px 0px 16px -3px #000000;
+    opacity: 0.7;
 }
                                     /* 5 Fin Bouton commander */
 
