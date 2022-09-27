@@ -111,7 +111,7 @@ main .menucontainer {
     padding-top : 1rem;
 }
                                     /* Media queries tablette et mobile */
-@media (max-width: 1025px){
+@media (max-width: 1026px){
     .menus-grid h3{
         width:45px;
         padding-top:50px;
@@ -202,11 +202,11 @@ main .menucontainer {
 
 @keyframes menu-appear {
     0%{
-        transform: translateY(-50%);
+        transform: translateY(50%);         /* Position de départ de la carte (qui vient du bas) */  
         opacity: 0;
     }
     100%{
-        transform:translateY(0);
+        transform:translateY(0);            /* Position finale de la carte */
         opacity: 1;
     }
 }
