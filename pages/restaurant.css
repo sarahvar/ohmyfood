@@ -202,7 +202,7 @@ main .menucontainer {
 
 @keyframes menu-appear {
     0%{
-        transform: translateY(50%);         /* Position de départ de la carte (qui vient du bas) */  
+        transform: translateY(-50%);         /* Position de départ de la carte (qui vient du haut) */  
         opacity: 0;
     }
     100%{

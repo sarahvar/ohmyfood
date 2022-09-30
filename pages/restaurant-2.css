@@ -191,11 +191,11 @@ main .menucontainer {
 }
 @keyframes menu-appear {
     0%{
-        transform: translateY(-50%);
+        transform: translateY(-50%); /* Position de départ de la carte (qui vient du haut) */ 
         opacity: 0;
     }
     100%{
-        transform:translateY(0);
+        transform:translateY(0);     /* Position finale de la carte */
         opacity: 1;
     }
 }
