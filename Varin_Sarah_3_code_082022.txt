@@ -1,2 +1,1 @@
 https://github.com/sarahvar/ohmyfood.git
-https://sarahvar.github.io/ohmyfood/
